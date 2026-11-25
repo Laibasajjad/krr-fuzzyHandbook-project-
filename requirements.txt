@@ -1,0 +1,6 @@
+numpy
+matplotlib
+streamlit
+pillow
+pymupdf          # only needed for annotate_handbook.py
+scikit-fuzzy     # only needed for verify_with_skfuzzy.py
