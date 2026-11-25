@@ -35,6 +35,11 @@ Prints PASS/FAIL for every query and writes `outputs/test_results.csv`.
 | `python annotate_handbook.py BU_handbook.pdf` | Re-creates the colour-highlighted handbook pages |
 | `python make_figures.py` | Re-creates all plots and the example panels |
 
+The app's **Handbook source** tab displays the checked-in page images in
+`outputs/handbook_pages/` and lets users download `Handbook_Annotated_Ch4_Ch5.pdf`.
+The original source handbook PDF is not included; to regenerate these assets, provide
+an authorized copy as `BU_handbook.pdf` in the project root and run the annotation script.
+
 ## 5. Files
 - `fuzzy_engine.py` - small Mamdani engine (membership functions, rules, centroid)
 - `handbook_data.py` - handbook numbers, the 24 rules (R01-R24), their source text, pages and colours

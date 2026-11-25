@@ -23,6 +23,15 @@ outputs/
 *.jpeg
 *.pdf
 
+# Handbook source assets used by the app
+!outputs/
+outputs/*
+!outputs/handbook_pages/
+outputs/handbook_pages/*
+!outputs/handbook_pages/*.png
+outputs/Handbook_Annotated_Ch4_Ch5.pdf
+!/Handbook_Annotated_Ch4_Ch5.pdf
+
 # Streamlit
 .streamlit/secrets.toml
 

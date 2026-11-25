@@ -290,6 +290,15 @@ else:
         show(f"<div class='card'><h3>Rule base of this module</h3>{rule_rows(rows, original=True)}</div>")
     with t4:
         st.caption("Handbook pages with the colour-coded highlights (same colours as the rule chips).")
+        handbook_pdf = os.path.join(BASE, "Handbook_Annotated_Ch4_Ch5.pdf")
+        if os.path.isfile(handbook_pdf):
+            with open(handbook_pdf, "rb") as source:
+                st.download_button(
+                    "Download annotated handbook excerpt",
+                    data=source.read(),
+                    file_name="Handbook_Annotated_Ch4_Ch5.pdf",
+                    mime="application/pdf",
+                )
         for pg in HB_PAGES[res["module"]]:
             p = os.path.join(BASE, "outputs", "handbook_pages", f"page_{pg}.png")
             if os.path.exists(p):
